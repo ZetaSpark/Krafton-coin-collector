@@ -8,7 +8,6 @@ A real-time **multiplayer coin-collector game** with:
 - **Client-side interpolation** for smooth movement
 - **HTML5 Canvas** rendering  
 - **Pure JavaScript — no game engine or networking middleware**
-
 ---
 
 ## 🚀 Features
