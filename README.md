@@ -1,14 +1,13 @@
-# Krafton – Associate Game Developer Assignment  
-### Multiplayer State Synchronization • Node.js Server • HTML5 Canvas Client
+# Krafton – Associate Game Developer Assignment
 
-This project implements the assignment requirements for the **Associate Game Developer** role at **Krafton**.  
-It creates a simple real-time **multiplayer coin-collector game** with:
+A real-time **multiplayer coin-collector game** with:
 
-- **Server-authoritative state**
-- **WebSockets** for real-time networking
-- **Interpolation** on clients for smooth movement
-- **~200ms simulated latency** (100ms each direction)
-- **No networking/game engine** used — everything is implemented manually.
+- **Server-authoritative gameplay**
+- **WebSockets** for real-time communication  
+- **~200ms simulated latency** (100ms incoming + 100ms outgoing)
+- **Client-side interpolation** for smooth movement
+- **HTML5 Canvas** rendering  
+- **Pure JavaScript — no game engine or networking middleware**
 
 ---
 
@@ -42,7 +41,35 @@ Whenever a player touches a coin:
 If only one player is connected, client displays:  
 > “Open another browser tab to connect Player 2”
 
----
+## 🧭 How to Run the Project
 
-## 📦 Folder Structure
+### 1️⃣ Start the Server (Node.js)
+
+Open a terminal inside the `server` folder:
+
+```bash
+cd server
+npm install
+npm start
+```
+
+### 2️⃣ Start the Client (Local Web Server)
+
+Open another terminal inside the **client** folder:
+
+```bash
+cd client
+python -m http.server 8000
+```
+
+3️⃣ Open the Game in Your Browser
+
+Open TWO or more tabs or windows:
+
+Tab 1: http://localhost:8000
+Tab 2: http://localhost:8000
+
+Each tab represents one player.
+
+
 
