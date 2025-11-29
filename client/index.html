@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coin Collector Multiplayer</title>
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #game-container {
+      margin-top: 16px;
+      position: relative;
+    }
+    canvas {
+      border: 2px solid #555;
+      background: #222;
+      display: block;
+    }
+    #info {
+      margin-top: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Coin Collector Multiplayer</h1>
+  <div id="game-container">
+    <canvas id="game" width="800" height="600"></canvas>
+  </div>
+  <div id="info">
+    <div>Controls: WASD or Arrow Keys</div>
+    <div id="status">Connecting...</div>
+    <div id="scores"></div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
